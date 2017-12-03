@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/BSD-3-blue.svg)](https://github.com/Equim-chan/base256/blob/master/LICENSE)
 [![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg)](https://godoc.org/ekyu.moe/base256)
 
-:cyclone: Binary to emoji encoding.
+:cyclone: Base256 is a binary-to-emoji encoding scheme implementation.
 
 ## Install
 ```bash
