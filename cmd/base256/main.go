@@ -30,7 +30,7 @@ func main() {
 	flag.BoolVar(&decodeMode, "d", false, "")
 	flag.BoolVar(&decodeMode, "decode", false, "")
 	flag.StringVar(&outFilename, "o", "-", "")
-	flag.StringVar(&outFilename, "ouput", "-", "")
+	flag.StringVar(&outFilename, "output", "-", "")
 
 	flag.Usage = func() {
 		fmt.Fprint(os.Stderr, usage)
