@@ -1,0 +1,26 @@
+language: go
+
+sudo: false
+
+go:
+  - 1.9
+  - tip
+
+go_import_path: ekyu.moe/base256
+
+install:
+  - go get -t ./...
+  - go generate ./...
+
+script:
+  - diff -u <(echo -n) <(gofmt -d .)
+  - go vet ./...
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
