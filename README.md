@@ -1,6 +1,6 @@
 # base256
 [![Travis](https://img.shields.io/travis/Equim-chan/base256.svg)](https://travis-ci.org/Equim-chan/base256)
-[![Coverage Status](https://img.shields.io/coveralls/Equim-chan/base256.svg?style=flat)](https://coveralls.io/github/Equim-chan/base256?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/gh/Equim-chan/base256.svg)](https://codecov.io/gh/Equim-chan/base256)
 [![Release](https://img.shields.io/github/release/Equim-chan/base256.svg)](https://github.com/Equim-chan/base256/releases/latest)
 [![Go Report Card](https://goreportcard.com/badge/github.com/Equim-chan/base256)](https://goreportcard.com/report/github.com/Equim-chan/base256)
 [![License](https://img.shields.io/badge/BSD-3-blue.svg)](https://github.com/Equim-chan/base256/blob/master/LICENSE)
