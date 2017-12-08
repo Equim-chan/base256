@@ -27,8 +27,9 @@ type decoder struct {
 	err    error
 }
 
-// NewDecoder constructs a new base256 stream decoder. Data read from the returned
-// reader is base256 decoded from r. Non-base256 runes are skipped silently.
+// NewDecoder constructs a new base256 stream decoder. Data read from the
+// returned reader is base256 decoded from r.
+// Non-base256 runes are skipped silently.
 func NewDecoder(r io.Reader) io.Reader {
 	return &decoder{
 		reader: bufio.NewReader(r),

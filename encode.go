@@ -29,8 +29,9 @@ type encoder struct {
 }
 
 // NewEncoder returns a new base256 stream encoder. Data written to the returned
-// writer will be encoded using base256 and then written to w. When finished writing,
-// the caller must Close the returned encoder to flush any partially written blocks.
+// writer will be encoded using base256 and then written to w.
+// When finished writing, the caller must Close the returned encoder to flush
+// any partially written blocks.
 func NewEncoder(w io.Writer) io.WriteCloser {
 	return &encoder{
 		writer: bufio.NewWriter(w),
