@@ -38,7 +38,7 @@ A CLI utility is also available with `go get ekyu.moe/base256/cmd/base256`.
 ## Specification
 base256 encoding uses two tables to transform a single byte into a single emoji. The tables can be found in [table.go](https://github.com/Equim-chan/base256/blob/master/table.go). In this implementation, these tables are utilized circularly when encoding, however such rule does not apply to decoding.
 
-To achieve the best compatibility, all the emojis are picked from the [classic version](http://classic.getemoji.com/) and each of them is 4 bytes long in UTF-8.
+To achieve the best compatibility, all the emojis are picked from the [classic version](http://classic.getemoji.com/) and each of them is guaranteed to be 4 bytes long in UTF-8.
 
 ## License
 [BSD-3-clause](https://github.com/Equim-chan/base256/blob/master/LICENSE)

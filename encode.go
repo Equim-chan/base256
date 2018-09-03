@@ -12,11 +12,7 @@ func EncodeToString(src []byte) string {
 
 	for i := 0; i < len(src); i++ {
 		dst = append(dst, enctab[table][src[i]])
-		if table == 0 {
-			table = 1
-		} else {
-			table = 0
-		}
+		table = 1 - table
 	}
 
 	return string(dst)
@@ -50,11 +46,7 @@ func (e *encoder) Write(c []byte) (int, error) {
 			e.err = err
 			return i, err
 		}
-		if e.table == 0 {
-			e.table = 1
-		} else {
-			e.table = 0
-		}
+		e.table = 1 - e.table
 	}
 
 	return i, nil
