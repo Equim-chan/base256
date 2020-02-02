@@ -10,9 +10,7 @@
 
 ## Install
 ```bash
-$ go get -u ekyu.moe/base256
-# or better
-$ dep ensure -add ekyu.moe/base256
+$ go get ekyu.moe/base256
 ```
 
 ## Example
